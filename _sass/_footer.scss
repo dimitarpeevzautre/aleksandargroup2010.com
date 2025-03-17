@@ -1,0 +1,63 @@
+.site-footer {
+  background-color: $secondary-color;
+  color: $white;
+  padding: $spacer * 4 0 $spacer * 2;
+  
+  a {
+    color: $white;
+    text-decoration: none;
+    
+    &:hover {
+      color: darken($white, 15%);
+    }
+  }
+  
+  h3 {
+    color: $white;
+    margin-bottom: $spacer * 1.5;
+    font-size: 1.25rem;
+  }
+  
+  .footer-logo {
+    img {
+      max-height: 60px;
+      width: auto;
+      margin-bottom: $spacer;
+    }
+    
+    .footer-tagline {
+      margin-bottom: $spacer * 1.5;
+    }
+  }
+  
+  .footer-nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin-bottom: $spacer * 0.5;
+      }
+    }
+  }
+  
+  .footer-contact {
+    address {
+      font-style: normal;
+      line-height: 1.6;
+    }
+  }
+  
+  .footer-bottom {
+    margin-top: $spacer * 3;
+    padding-top: $spacer * 2;
+    border-top: 1px solid rgba($white, 0.2);
+    text-align: center;
+    
+    .copyright {
+      color: rgba($white, 0.7);
+      font-size: 0.9rem;
+    }
+  }
+}

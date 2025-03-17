@@ -1,0 +1,11 @@
+- title: "Facebook"
+  url: "https://www.facebook.com/"
+  icon: "/assets/images/social/facebook.svg"
+
+- title: "Instagram"
+  url: "https://www.instagram.com/"
+  icon: "/assets/images/social/instagram.svg"
+
+- title: "LinkedIn"
+  url: "https://www.linkedin.com/"
+  icon: "/assets/images/social/linkedin.svg"

@@ -1,0 +1,79 @@
+// Generic page
+.page {
+  padding: $spacer * 3 0;
+  
+  .page-header {
+    margin-bottom: $spacer * 3;
+    text-align: center;
+    
+    .page-title {
+      position: relative;
+      display: inline-block;
+      
+      &:after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: $primary-color;
+        margin: $spacer auto 0;
+      }
+    }
+  }
+  
+  .page-content {
+    p, ul, ol, blockquote, figure, table {
+      margin-bottom: $spacer * 1.5;
+    }
+    
+    h2, h3, h4, h5, h6 {
+      margin-top: $spacer * 2;
+      margin-bottom: $spacer;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: $spacer 0;
+      border-radius: $border-radius;
+    }
+    
+    figure {
+      margin: $spacer * 2 0;
+      
+      figcaption {
+        text-align: center;
+        font-style: italic;
+        margin-top: $spacer * 0.5;
+        color: $gray;
+      }
+    }
+    
+    blockquote {
+      margin: $spacer * 2 0;
+      padding: $spacer * 1.5;
+      border-left: 5px solid $primary-color;
+      background-color: $gray-light;
+      font-style: italic;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      
+      th, td {
+        padding: $spacer * 0.75;
+        border: 1px solid lighten($gray, 30%);
+      }
+      
+      th {
+        background-color: $gray-light;
+        font-weight: 700;
+      }
+      
+      tr:nth-child(even) {
+        background-color: $gray-light;
+      }
+    }
+  }
+}

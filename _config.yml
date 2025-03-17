@@ -1,0 +1,49 @@
+title: Александър Груп
+email: info@aleksandargroup2010.com
+description: >-
+  Професионална строителна компания в България. Предлагаме висококачествени строителни услуги и проекти.
+baseurl: ""
+url: "https://aleksandargroup2010.com"
+lang: bg
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md

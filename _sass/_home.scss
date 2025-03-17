@@ -1,0 +1,94 @@
+// Hero section
+.hero {
+  position: relative;
+  background-color: $secondary-color;
+  background-image: url('/assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  text-align: center;
+  padding: $spacer * 8 0;
+  margin-bottom: 0;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($secondary-color, 0.7);
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    color: $white;
+    font-size: 3rem;
+    margin-bottom: $spacer * 1.5;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: 4rem;
+    }
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    margin-bottom: $spacer * 2;
+    
+    @media (min-width: $breakpoint-md) {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Section headings
+.home section h2 {
+  text-align: center;
+  margin-bottom: $spacer * 3;
+  
+  &:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: $primary-color;
+    margin: $spacer auto 0;
+  }
+}
+
+// Projects section
+.projects-link {
+  text-align: center;
+  margin-top: $spacer * 3;
+}
+
+// About section
+.about-image {
+  img {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+  }
+}
+
+// Contact section
+.contact {
+  background-color: $gray-light;
+}
+
+.contact-info {
+  .contact-item {
+    margin-bottom: $spacer * 2;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    h3 {
+      margin-bottom: $spacer * 0.5;
+    }
+  }
+}

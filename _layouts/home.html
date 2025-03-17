@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+<div class="home">
+  <section class="hero">
+    <div class="container">
+      <h1>{{ site.title }}</h1>
+      <p class="tagline">Професионални строителни услуги с доказано качество</p>
+      <a href="#contact" class="btn btn-primary">Свържете се с нас</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Нашите услуги</h2>
+      <div class="services-grid">
+        {% for service in site.data.services %}
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="{{ service.icon | relative_url }}" alt="{{ service.title }}">
+          </div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-projects" id="projects">
+    <div class="container">
+      <h2>Избрани проекти</h2>
+      <div class="projects-grid">
+        {% for project in site.projects limit:3 %}
+        <div class="project-card">
+          <a href="{{ project.url | relative_url }}">
+            <div class="project-thumbnail">
+              <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}">
+            </div>
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.excerpt }}</p>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="projects-link">
+        <a href="{{ '/projects/' | relative_url }}" class="btn btn-secondary">Вижте всички проекти</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>За нас</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Александър Груп е водеща строителна компания с богат опит в изпълнението на разнообразни строителни проекти. Нашият екип от квалифицирани специалисти предлага цялостни решения от проектиране до изпълнение.</p>
+          <p>Работим с модерна техника и висококачествени материали, за да гарантираме отлични резултати и пълно задоволство на нашите клиенти.</p>
+        </div>
+        <div class="about-image">
+          <img src="{{ '/assets/images/about.jpg' | relative_url }}" alt="Александър Груп - За нас">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Свържете се с нас</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Адрес</h3>
+            <p>{{ site.data.contact.address }}</p>
+          </div>
+          <div class="contact-item">
+            <h3>Телефон</h3>
+            <p>{{ site.data.contact.phone }}</p>
+          </div>
+          <div class="contact-item">
+            <h3>Имейл</h3>
+            <p>{{ site.email }}</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Име</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Имейл</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Съобщение</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Изпрати</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

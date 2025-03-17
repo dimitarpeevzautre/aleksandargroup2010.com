@@ -1,0 +1,58 @@
+// Projects page
+.projects-page {
+  padding: $spacer * 2 0;
+}
+
+// Project detail
+.project {
+  padding: $spacer * 2 0;
+  
+  .project-header {
+    margin-bottom: $spacer * 2;
+    
+    .project-title {
+      margin-bottom: $spacer * 0.5;
+    }
+    
+    .project-meta {
+      color: $gray;
+      
+      .project-location,
+      .project-year {
+        margin-right: $spacer;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  
+  .project-featured-image {
+    margin-bottom: $spacer * 2;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .project-content {
+    margin-bottom: $spacer * 3;
+  }
+  
+  .project-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $spacer * 3;
+    padding-top: $spacer * 2;
+    border-top: 1px solid lighten($gray, 30%);
+    
+    a {
+      font-weight: 700;
+    }
+  }
+}

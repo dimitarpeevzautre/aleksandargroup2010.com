@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<article class="project">
+  <div class="container">
+    <header class="project-header">
+      <h1 class="project-title">{{ page.title }}</h1>
+      <div class="project-meta">
+        <span class="project-location">{{ page.location }}</span>
+        <span class="project-year">{{ page.year }}</span>
+      </div>
+    </header>
+
+    <div class="project-featured-image">
+      <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}">
+    </div>
+
+    <div class="project-content">
+      {{ content }}
+    </div>
+
+    <div class="project-gallery">
+      {% for image in page.gallery %}
+      <div class="gallery-item">
+        <img src="{{ image.url | relative_url }}" alt="{{ image.caption }}">
+        {% if image.caption %}
+        <div class="caption">{{ image.caption }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="project-navigation">
+      <div class="project-navigation-prev">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url | relative_url }}">&laquo; {{ page.previous.title }}</a>
+        {% endif %}
+      </div>
+      <div class="project-navigation-next">
+        {% if page.next.url %}
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &raquo;</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>

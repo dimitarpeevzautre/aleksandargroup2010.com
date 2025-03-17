@@ -1,0 +1,117 @@
+// Container
+.container {
+  width: 100%;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+// Section
+section {
+  padding: $spacer * 3 0;
+  
+  @media (min-width: $breakpoint-md) {
+    padding: $spacer * 5 0;
+  }
+  
+  &:nth-child(even) {
+    background-color: $gray-light;
+  }
+}
+
+// Grids
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer * 2;
+  margin-top: $spacer * 2;
+  
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer * 2;
+  margin-top: $spacer * 2;
+  
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer * 2;
+  margin-top: $spacer * 2;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer * 2;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer * 2;
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer * 2;
+  
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer;
+  margin-top: $spacer * 2;
+  
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

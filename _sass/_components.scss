@@ -1,0 +1,240 @@
+// Buttons
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: $border-radius;
+  text-decoration: none;
+  font-weight: 700;
+  transition: $transition-base;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  
+  &.btn-primary {
+    background-color: $primary-color;
+    color: $white;
+    
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      color: $white;
+    }
+  }
+  
+  &.btn-secondary {
+    background-color: $white;
+    color: $primary-color;
+    border-color: $primary-color;
+    
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+// Cards
+.service-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $spacer * 2;
+  height: 100%;
+  transition: $transition-base;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon {
+    margin-bottom: $spacer;
+    
+    img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+    }
+  }
+  
+  h3 {
+    margin-bottom: $spacer;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.project-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+  height: 100%;
+  transition: $transition-base;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  a {
+    color: $text-color;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .project-thumbnail {
+    height: 250px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  h3 {
+    padding: $spacer * 1.5 $spacer * 1.5 0;
+    margin-bottom: $spacer * 0.5;
+  }
+  
+  p {
+    padding: 0 $spacer * 1.5 $spacer * 1.5;
+    margin-bottom: 0;
+  }
+}
+
+.post-card {
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $spacer * 2;
+  height: 100%;
+  transition: $transition-base;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .post-date {
+    color: $gray;
+    margin-bottom: $spacer * 0.5;
+    font-size: 0.9rem;
+  }
+  
+  h3 {
+    margin-bottom: $spacer;
+    
+    a {
+      color: $secondary-color;
+      
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  
+  .post-excerpt {
+    margin-bottom: $spacer;
+  }
+  
+  .read-more {
+    font-weight: bold;
+  }
+}
+
+// Forms
+.form-group {
+  margin-bottom: $spacer * 1.5;
+  
+  label {
+    display: block;
+    margin-bottom: $spacer * 0.5;
+    font-weight: 700;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid lighten($gray, 30%);
+    border-radius: $border-radius;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    transition: $transition-base;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 2px rgba($primary-color, 0.25);
+    }
+  }
+}
+
+// Gallery
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: $border-radius;
+  
+  img {
+    width: 100%;
+    height: auto;
+    transition: $transition-base;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($black, 0.7);
+    color: $white;
+    padding: $spacer;
+    transform: translateY(100%);
+    transition: $transition-base;
+  }
+  
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+    
+    .caption {
+      transform: translateY(0);
+    }
+  }
+}
+
+// Social Links
+.social-links {
+  display: flex;
+  gap: $spacer;
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 50%;
+    transition: $transition-base;
+    
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    
+    &:hover {
+      background-color: $primary-color;
+      
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}

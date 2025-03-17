@@ -1,0 +1,47 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/logo-white.png' | relative_url }}" alt="{{ site.title }}">
+        </a>
+        <p class="footer-tagline">Професионални строителни услуги с доказано качество</p>
+      </div>
+      
+      <div class="footer-nav">
+        <h3>Бързи връзки</h3>
+        <ul>
+          <li><a href="{{ '/#services' | relative_url }}">Услуги</a></li>
+          <li><a href="{{ '/#projects' | relative_url }}">Проекти</a></li>
+          <li><a href="{{ '/#about' | relative_url }}">За нас</a></li>
+          <li><a href="{{ '/blog' | relative_url }}">Блог</a></li>
+          <li><a href="{{ '/#contact' | relative_url }}">Контакти</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>Контакти</h3>
+        <address>
+          {{ site.data.contact.address }}<br>
+          Телефон: {{ site.data.contact.phone }}<br>
+          Имейл: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </address>
+      </div>
+      
+      <div class="footer-social">
+        <h3>Следвайте ни</h3>
+        <div class="social-links">
+          {% for social in site.data.social %}
+          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ social.icon | relative_url }}" alt="{{ social.title }}">
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Всички права запазени.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,23 @@
+- title: "Жилищно строителство"
+  icon: "/assets/images/services/residential.svg"
+  description: "Проектиране и изграждане на еднофамилни и многофамилни жилищни сгради с високо качество на изпълнение."
+
+- title: "Промишлено строителство"
+  icon: "/assets/images/services/industrial.svg"
+  description: "Проектиране и изграждане на производствени предприятия, складове и други промишлени обекти."
+
+- title: "Търговско строителство"
+  icon: "/assets/images/services/commercial.svg"
+  description: "Изграждане на офис сгради, търговски центрове и други търговски обекти по индивидуален проект."
+
+- title: "Ремонтни дейности"
+  icon: "/assets/images/services/renovation.svg"
+  description: "Цялостни и частични ремонти на жилищни, обществени и промишлени сгради с високо качество."
+
+- title: "Инфраструктурни проекти"
+  icon: "/assets/images/services/infrastructure.svg"
+  description: "Изграждане на пътища, мостове, ВиК системи и други инфраструктурни проекти."
+
+- title: "Архитектурно проектиране"
+  icon: "/assets/images/services/architecture.svg"
+  description: "Изготвяне на архитектурни проекти, технически чертежи и 3D визуализации."
