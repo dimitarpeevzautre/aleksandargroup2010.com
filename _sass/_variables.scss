@@ -1,19 +1,21 @@
+@use "sass:color";
+
 // Colors
-$red: #e30613;
+$gold: #ffc000;
 $white: #ffffff;
 $black: #000000;
 $gray-dark: #333333;
 $gray: #666666;
 $gray-light: #f5f5f5;
 
-$primary-color: $red;
-$secondary-color: $black;
-$body-bg: $white;
-$text-color: $gray-dark;
+$primary-color: $gold;
+$secondary-color: $white;
+$body-bg: $black;
+$text-color: $white;
 
 // Fonts
-$font-family-base: 'Arial', sans-serif;
-$font-family-heading: 'Arial', sans-serif;
+$font-family-base: 'Poppins', 'Arial', sans-serif;
+$font-family-heading: 'Poppins', 'Arial', sans-serif;
 $font-size-base: 16px;
 $line-height-base: 1.5;
 

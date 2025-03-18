@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables" as *;
+
 // Container
 .container {
   width: 100%;
@@ -10,14 +13,10 @@
 
 // Section
 section {
-  padding: $spacer * 3 0;
+  padding: $spacer * 4 0;
   
   @media (min-width: $breakpoint-md) {
-    padding: $spacer * 5 0;
-  }
-  
-  &:nth-child(even) {
-    background-color: $gray-light;
+    padding: $spacer * 6 0;
   }
 }
 

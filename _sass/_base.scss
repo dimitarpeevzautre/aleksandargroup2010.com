@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables" as *;
+
 // Reset
 * {
   margin: 0;
@@ -21,9 +24,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-heading;
   margin-bottom: $spacer;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
-  color: $secondary-color;
+  color: $primary-color;
 }
 
 h1 {
@@ -72,7 +75,7 @@ a {
   transition: $transition-base;
   
   &:hover {
-    color: darken($primary-color, 10%);
+    color: color.scale($primary-color, $lightness: 20%);
   }
 }
 
@@ -95,14 +98,15 @@ blockquote {
   margin: $spacer 0;
   padding: $spacer;
   border-left: 5px solid $primary-color;
-  background-color: $gray-light;
+  background-color: rgba($black, 0.3);
   font-style: italic;
+  color: $white;
 }
 
 hr {
   margin: $spacer * 2 0;
   border: 0;
-  border-top: 1px solid lighten($gray, 30%);
+  border-top: 1px solid color.scale($gray, $lightness: 50%);
 }
 
 address {
@@ -142,11 +146,11 @@ table {
   th, td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid lighten($gray, 30%);
+    border-top: 1px solid color.scale($gray, $lightness: 50%);
   }
   
   thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid lighten($gray, 30%);
+    border-bottom: 2px solid color.scale($gray, $lightness: 50%);
   }
 }

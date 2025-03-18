@@ -1,23 +1,61 @@
+@use "sass:color";
+@use "variables" as *;
+
 // Hero section
 .hero {
   position: relative;
-  background-color: $secondary-color;
-  background-image: url('/assets/images/hero-bg.jpg');
+  background-color: $black;
   background-size: cover;
   background-position: center;
   color: $white;
   text-align: center;
-  padding: $spacer * 8 0;
+  padding: $spacer * 10 0;
   margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
   
-  &:before {
-    content: '';
+  .diagonal-lines {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba($secondary-color, 0.7);
+    z-index: 0;
+    
+    .line {
+      position: absolute;
+      height: 2px;
+      background-color: $primary-color;
+      transform-origin: 0 0;
+      
+      &:nth-child(1) {
+        width: 200%;
+        top: 20%;
+        left: -50%;
+        transform: rotate(30deg);
+      }
+      
+      &:nth-child(2) {
+        width: 150%;
+        top: 40%;
+        left: -20%;
+        transform: rotate(45deg);
+      }
+      
+      &:nth-child(3) {
+        width: 180%;
+        top: 60%;
+        left: -30%;
+        transform: rotate(35deg);
+      }
+      
+      &:nth-child(4) {
+        width: 160%;
+        top: 80%;
+        left: -10%;
+        transform: rotate(25deg);
+      }
+    }
   }
   
   .container {
@@ -25,38 +63,97 @@
     z-index: 1;
   }
   
-  h1 {
-    color: $white;
-    font-size: 3rem;
-    margin-bottom: $spacer * 1.5;
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-logo {
+    margin-bottom: $spacer * 3;
     
-    @media (min-width: $breakpoint-md) {
-      font-size: 4rem;
+    img {
+      max-width: 300px;
+      height: auto;
     }
   }
   
   .tagline {
-    font-size: 1.5rem;
-    margin-bottom: $spacer * 2;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: $spacer * 3;
+    color: $white;
+    letter-spacing: 1px;
     
     @media (min-width: $breakpoint-md) {
-      font-size: 2rem;
+      font-size: 3rem;
     }
+  }
+  
+  .btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
   }
 }
 
 // Section headings
-.home section h2 {
-  text-align: center;
-  margin-bottom: $spacer * 3;
+.home section {
+  padding: $spacer * 5 0;
+  position: relative;
+  overflow: hidden;
   
-  &:after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background-color: $primary-color;
-    margin: $spacer auto 0;
+  .diagonal-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.1;
+    
+    .line {
+      position: absolute;
+      height: 1px;
+      background-color: $primary-color;
+      transform-origin: 0 0;
+      
+      &:nth-child(1) {
+        width: 200%;
+        top: 20%;
+        left: -50%;
+        transform: rotate(45deg);
+      }
+      
+      &:nth-child(2) {
+        width: 150%;
+        top: 50%;
+        left: -20%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: $spacer * 3;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: $primary-color;
+    
+    &:after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 2px;
+      background-color: $primary-color;
+      margin: $spacer auto 0;
+    }
   }
 }
 
@@ -67,28 +164,70 @@
 }
 
 // About section
-.about-image {
-  img {
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+.about {
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacer * 3;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+  
+  .about-text {
+    p {
+      margin-bottom: $spacer;
+      color: $white;
+      line-height: 1.8;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  .about-image {
+    img {
+      border-radius: $border-radius;
+      box-shadow: $box-shadow;
+      width: 100%;
+      height: auto;
+      border: 3px solid rgba($primary-color, 0.3);
+    }
   }
 }
 
 // Contact section
 .contact {
-  background-color: $gray-light;
-}
-
-.contact-info {
-  .contact-item {
-    margin-bottom: $spacer * 2;
+  background-color: rgba($black, 0.3);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba($primary-color, 0.1) 100%);
+    z-index: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacer * 3;
     
-    &:last-child {
-      margin-bottom: 0;
-    }
-    
-    h3 {
-      margin-bottom: $spacer * 0.5;
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }

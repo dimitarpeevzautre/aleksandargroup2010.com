@@ -1,10 +1,14 @@
+@use "sass:color";
+@use "variables" as *;
+
 .site-header {
-  background-color: $white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba($black, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 100;
   padding: $spacer 0;
+  backdrop-filter: blur(10px);
   
   .header-content {
     display: flex;
@@ -45,24 +49,45 @@
     align-items: center;
     
     .nav-link {
-      color: $secondary-color;
+      color: $white;
       text-decoration: none;
-      font-weight: 700;
+      font-weight: 500;
       transition: $transition-base;
+      position: relative;
+      padding: 0.5rem 0;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $primary-color;
+        transition: width 0.3s ease;
+      }
       
       &:hover {
         color: $primary-color;
+        
+        &::after {
+          width: 100%;
+        }
       }
       
       &.contact-btn {
         background-color: $primary-color;
-        color: $white;
+        color: $black;
         padding: 0.5rem 1rem;
         border-radius: $border-radius;
         
+        &::after {
+          display: none;
+        }
+        
         &:hover {
-          background-color: darken($primary-color, 10%);
-          color: $white;
+          background-color: color.scale($primary-color, $lightness: -20%);
+          transform: translateY(-3px);
         }
       }
     }
@@ -78,14 +103,15 @@
       top: 100%;
       left: 0;
       right: 0;
-      background-color: $white;
+      background-color: rgba($black, 0.9);
       flex-direction: column;
       padding: $spacer;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       transform: scaleY(0);
       transform-origin: top;
       transition: transform 0.2s ease-in-out;
       z-index: 100;
+      backdrop-filter: blur(10px);
       
       .nav-link {
         padding: $spacer * 0.5 0;

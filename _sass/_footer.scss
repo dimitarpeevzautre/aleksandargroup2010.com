@@ -1,21 +1,54 @@
+@use "sass:color";
+@use "variables" as *;
+
 .site-footer {
-  background-color: $secondary-color;
+  background-color: rgba($black, 0.9);
   color: $white;
   padding: $spacer * 4 0 $spacer * 2;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba($primary-color, 0.1) 100%);
+    z-index: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
   
   a {
     color: $white;
     text-decoration: none;
+    transition: $transition-base;
     
     &:hover {
-      color: darken($white, 15%);
+      color: $primary-color;
     }
   }
   
   h3 {
-    color: $white;
+    color: $primary-color;
     margin-bottom: $spacer * 1.5;
     font-size: 1.25rem;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: $primary-color;
+    }
   }
   
   .footer-logo {

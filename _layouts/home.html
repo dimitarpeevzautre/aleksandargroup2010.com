@@ -4,14 +4,28 @@ layout: default
 
 <div class="home">
   <section class="hero">
+    <div class="diagonal-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <div class="container">
-      <h1>{{ site.title }}</h1>
-      <p class="tagline">Професионални строителни услуги с доказано качество</p>
-      <a href="#contact" class="btn btn-primary">Свържете се с нас</a>
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="{{ '/assets/images/logo-ag2010.png' | relative_url }}" alt="{{ site.title }}">
+        </div>
+        <h1 class="tagline">We build new tomorrow, today</h1>
+        <a href="#contact" class="btn btn-primary">Свържете се с нас</a>
+      </div>
     </div>
   </section>
 
   <section class="services" id="services">
+    <div class="diagonal-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <div class="container">
       <h2>Нашите услуги</h2>
       <div class="services-grid">
@@ -29,6 +43,10 @@ layout: default
   </section>
 
   <section class="featured-projects" id="projects">
+    <div class="diagonal-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <div class="container">
       <h2>Избрани проекти</h2>
       <div class="projects-grid">
@@ -51,6 +69,10 @@ layout: default
   </section>
 
   <section class="about" id="about">
+    <div class="diagonal-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <div class="container">
       <h2>За нас</h2>
       <div class="about-content">
@@ -66,21 +88,44 @@ layout: default
   </section>
 
   <section class="contact" id="contact">
+    <div class="diagonal-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <div class="container">
       <h2>Свържете се с нас</h2>
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="contact-item">
-            <h3>Адрес</h3>
-            <p>{{ site.data.contact.address }}</p>
-          </div>
-          <div class="contact-item">
-            <h3>Телефон</h3>
-            <p>{{ site.data.contact.phone }}</p>
-          </div>
-          <div class="contact-item">
-            <h3>Имейл</h3>
-            <p>{{ site.email }}</p>
+          <div class="contact-card">
+            <div class="contact-header">
+              <h3>{{ site.data.contact.manager }}</h3>
+              <p class="position">{{ site.data.contact.position }}</p>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-item">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <div class="text">
+                  <p><a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a></p>
+                  <p><a href="tel:{{ site.data.contact.phone2 }}">{{ site.data.contact.phone2 }}</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <div class="text">
+                  <p><a href="{{ site.data.contact.website }}">{{ site.data.contact.website }}</a></p>
+                  <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fa fa-map-marker"></i></div>
+                <div class="text">
+                  <p>{{ site.data.contact.address }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-logo">
+              <img src="{{ '/assets/images/logo-ag2010.png' | relative_url }}" alt="{{ site.title }}">
+            </div>
           </div>
         </div>
         <div class="contact-form">
