@@ -46,4 +46,7 @@ exclude:
   - node_modules
   - vendor
   - .git
+  - .github
   - README.md
+  - CLAUDE.md
+  - requirements
