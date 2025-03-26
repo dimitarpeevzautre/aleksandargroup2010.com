@@ -4,8 +4,8 @@ title: "Minstroy Holding"
 location: "София, България"
 year: 2022
 date: 2022-10-14
-thumbnail: "/assets/images/projects/minstroy/Заглавна снимка Min.jpg"
-featured_image: "/assets/images/projects/minstroy/Заглавна снимка Min.jpg"
+thumbnail: "/assets/images/projects/minstroy/Заглавна снимка Min.JPG"
+featured_image: "/assets/images/projects/minstroy/Заглавна снимка Min.JPG"
 gallery:
   - url: "/assets/images/projects/minstroy/1.JPG"
   - url: "/assets/images/projects/minstroy/2.JPG"
@@ -19,7 +19,6 @@ gallery:
   - url: "/assets/images/projects/minstroy/10.JPG"
   - url: "/assets/images/projects/minstroy/11.JPG"
   - url: "/assets/images/projects/minstroy/12.JPG"
-  - url: "/assets/images/projects/minstroy/13.JPG"
   - url: "/assets/images/projects/minstroy/14.JPG"
   - url: "/assets/images/projects/minstroy/15.JPG"
   - url: "/assets/images/projects/minstroy/16.JPG"
