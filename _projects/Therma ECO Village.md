@@ -3,15 +3,20 @@ layout: project
 title: "Therma ECO Village"
 location: "София, България"
 year: 2022
-thumbnail: "/assets/images/projects/panorama-thumb.jpg"
-featured_image: "/assets/images/projects/panorama-featured.jpg"
+thumbnail: "/assets/images/projects/Заглавна снимка Therma.jpg"
+featured_image: "/assets/images/projects/Заглавна снимка Therma.jpg"
 gallery:
-  - url: "/assets/images/projects/panorama-gallery-1.jpg"
-    caption: "Изглед от птичи поглед на комплекса"
-  - url: "/assets/images/projects/panorama-gallery-2.jpg"
-    caption: "Вътрешен двор с градина"
-  - url: "/assets/images/projects/panorama-gallery-3.jpg"
-    caption: "Лоби на сградата"
+  - url: "/assets/images/projects/118.JPG"
+  - url: "/assets/images/projects/140.JPG"
+  - url: "/assets/images/projects/142.JPG"
+  - url: "/assets/images/projects/143.JPG"
+  - url: "/assets/images/projects/154.JPG"
+  - url: "/assets/images/projects/159.JPG"
+  - url: "/assets/images/projects/205.JPG"
+  - url: "/assets/images/projects/207.JPG"
+  - url: "/assets/images/projects/209.JPG"
+  - url: "/assets/images/projects/212.JPG"
+
 ---
 
 Жилищен комплекс "Панорама" е модерен резиденциален комплекс, разположен в кв. Младост, София. Комплексът се състои от три жилищни сгради с общо 120 апартамента и подземен паркинг.
