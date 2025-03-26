@@ -30,7 +30,10 @@ layout: default
       <h2>Нашите услуги</h2>
       <div class="services-grid">
         {% for service in site.data.services %}
-        <div class="service-card" data-gallery="{% if service.title == 'Жилищно строителство' %}home{% else %}{{ service.title | slugify }}{% endif %}">
+        <div class="service-card" 
+          data-gallery="{{ service.gallery_id }}"
+          data-title="{{ service.title }}"
+          data-images='{{ service.gallery_images | jsonify }}'>
           <div class="service-icon">
             <img src="{{ service.icon | relative_url }}" alt="{{ service.title }}">
           </div>
@@ -84,7 +87,7 @@ layout: default
           <p>Дружеството е специализирано в областта на изграждането на жилищни сгради, еднофамислни къщи, строително-ремонтна дейност и механизция. Работим с модерна техника и висококачествени материали, за да гарантираме отлични резултати и пълно задоволство на нашите клиенти.</p>
         </div>
         <div class="about-image">
-          <img src="{{ 'assets/images/Generated Image March 19, 2025 - 6_47PM.png.jpeg' | relative_url }}" alt="Александър Груп - За нас">
+          <img src="{{ 'assets/images/about.jpeg' | relative_url }}" alt="Александър Груп - За нас">
         </div>
       </div>
     </div>

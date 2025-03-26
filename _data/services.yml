@@ -1,23 +1,42 @@
 - title: "Жилищно строителство"
   icon: "/assets/images/services/residential.svg"
   description: "Изграждане на жилищни сгради, еднофамилни къщи, изкопи, събаряне на стари сгради, извозване на земни маси, доставка на скални фракции и др."
+  gallery_id: "home"
+  gallery_images:
+    - "/assets/images/home/IMG_7983.JPG"
+    - "/assets/images/home/IMG_7984.JPG"
+    - "/assets/images/home/IMG_7985.JPG"
+    - "/assets/images/home/IMG_7986.JPG"
+    - "/assets/images/home/IMG_7987.JPG"
+    - "/assets/images/home/IMG_7988.JPG"
+    - "/assets/images/home/IMG_7989.JPG"
 
 - title: "Ремонтни дейности"
   icon: "/assets/images/services/renovation.svg"
   description: "Вътрешни и външни цялостни и частични ремонти, покривни и дървени конструкции, фасади, хидро и топлоизолации."
+  gallery_id: "ремонтни-дейности"
+  gallery_images: []
 
 - title: "Басейни и Spa комплекси"
   icon: "/assets/images/services/commercial.svg"
   description: "Изграждане на басейни и цялостни Spa комплекси с високо качество на изпълнение."
+  gallery_id: "басейни-и-spa-комплекси"
+  gallery_images: []
 
 - title: "Довършителни дейности"
   icon: "/assets/images/services/industrial.svg"
   description: "Финна шпакловка, машинно боядисване, декоративни мазилки, гранитогрес, каменни облицовки, вътрешни и външни мазилки."
+  gallery_id: "довършителни-дейности"
+  gallery_images: []
 
 - title: "ОВК, ВиК и ел. инсталации"
   icon: "/assets/images/services/infrastructure.svg"
   description: "Изграждане на ОВК, ВиК и електро инсталации, подово отопление и други специализирани инсталации."
+  gallery_id: "овк-вик-и-ел-инсталации"
+  gallery_images: []
 
 - title: "Архитектурно проектиране"
   icon: "/assets/images/services/architecture.svg"
   description: "Изготвяне на архитектурни проекти, технически чертежи и 3D визуализации."
+  gallery_id: "архитектурно-проектиране"
+  gallery_images: []
