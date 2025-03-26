@@ -15,7 +15,8 @@
   icon: "/assets/images/services/renovation.svg"
   description: "Вътрешни и външни цялостни и частични ремонти, покривни и дървени конструкции, фасади, хидро и топлоизолации."
   gallery_id: "ремонтни-дейности"
-  gallery_images: []
+  gallery_images:
+    - "/assets/images/reconstruction/1.JPG"
 
 - title: "Басейни и Spa комплекси"
   icon: "/assets/images/services/commercial.svg"
