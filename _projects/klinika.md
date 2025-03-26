@@ -3,6 +3,7 @@ layout: project
 title: "Пластична хирургия Св. Николай Чудотворец"
 location: "София, България"
 year: 2022
+date: 2022-09-20
 thumbnail: "/assets/images/projects/Заглавна снимка.jpg"
 featured_image: "/assets/images/projects/Заглавна снимка.jpg"
 gallery:

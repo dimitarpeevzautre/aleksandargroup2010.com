@@ -3,6 +3,7 @@ layout: project
 title: "Therma ECO Village"
 location: "София, България"
 year: 2022
+date: 2022-11-15
 thumbnail: "/assets/images/projects/Заглавна снимка Therma.jpg"
 featured_image: "/assets/images/projects/Заглавна снимка Therma.jpg"
 gallery:

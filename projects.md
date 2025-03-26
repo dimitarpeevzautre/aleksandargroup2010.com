@@ -6,7 +6,8 @@ permalink: /projects/
 
 <div class="projects-page">
   <div class="projects-grid">
-    {% for project in site.projects %}
+    {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+    {% for project in sorted_projects %}
     <div class="project-card">
       <a href="{{ project.url | relative_url }}">
         <div class="project-thumbnail">
