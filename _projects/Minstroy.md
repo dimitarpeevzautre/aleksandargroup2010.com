@@ -34,8 +34,7 @@ gallery:
   - url: "/assets/images/projects/minstroy/IMG_8651.JPG"
   - url: "/assets/images/projects/minstroy/IMG_8652.JPG"
   - url: "/assets/images/projects/minstroy/IMG_8653.JPG"
- - url: "/assets/images/projects/minstroy/IMG_8654.JPG"
-
+  - url: "/assets/images/projects/minstroy/IMG_8654.JPG"
 
 ---
 
