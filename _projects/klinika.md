@@ -3,15 +3,19 @@ layout: project
 title: "Пластична хирургия Св. Николай Чудотворец"
 location: "София, България"
 year: 2022
-thumbnail: "/assets/images/projects/panorama-thumb.jpg"
-featured_image: "/assets/images/projects/panorama-featured.jpg"
+thumbnail: "/assets/images/projects/Заглавна снимка.jpg"
+featured_image: "/assets/images/projects/Заглавна снимка.jpg"
 gallery:
-  - url: "/assets/images/projects/panorama-gallery-1.jpg"
-    caption: "Изглед от птичи поглед на комплекса"
-  - url: "/assets/images/projects/panorama-gallery-2.jpg"
-    caption: "Вътрешен двор с градина"
-  - url: "/assets/images/projects/panorama-gallery-3.jpg"
-    caption: "Лоби на сградата"
+  - url: "/assets/images/projects/IMG_8222.jpg"
+    caption: "Изглед на фасада"
+  - url: "/assets/images/projects/IMG_8223.jpg"
+    caption: "Изглед на фасада"
+  - url: "/assets/images/projects/IMG_8224.jpg"
+  - url: "/assets/images/projects/IMG_8225.jpg"
+  - url: "/assets/images/projects/IMG_8226.jpg"
+    caption: "Интериор"
+  - url: "/assets/images/projects/IMG_8227.jpg"
+
 ---
 
 Жилищен комплекс "Панорама" е модерен резиденциален комплекс, разположен в кв. Младост, София. Комплексът се състои от три жилищни сгради с общо 120 апартамента и подземен паркинг.
