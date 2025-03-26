@@ -45,4 +45,107 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+  
+  // Gallery modal functionality
+  const galleryModal = document.getElementById('gallery-modal');
+  const galleryTitle = document.getElementById('gallery-title');
+  const galleryMainImage = document.getElementById('gallery-main-image');
+  const galleryThumbnails = document.getElementById('gallery-thumbnails');
+  const closeGallery = document.querySelector('.close-gallery');
+  
+  // Gallery image paths by service type
+  const galleryImages = {
+    'home': [
+      '/assets/images/home/IMG_7983.JPG',
+      '/assets/images/home/IMG_7984.JPG',
+      '/assets/images/home/IMG_7985.JPG',
+      '/assets/images/home/IMG_7986.JPG',
+      '/assets/images/home/IMG_7987.JPG',
+      '/assets/images/home/IMG_7988.JPG',
+      '/assets/images/home/IMG_7989.JPG'
+    ],
+    // Add more galleries as they become available
+    'ремонтни-дейности': [],
+    'басейни-и-spa-комплекси': [],
+    'довършителни-дейности': [],
+    'овк-вик-и-ел-инсталации': [],
+    'архитектурно-проектиране': []
+  };
+  
+  // Service title mapping
+  const serviceTitles = {
+    'home': 'Жилищно строителство',
+    'ремонтни-дейности': 'Ремонтни дейности',
+    'басейни-и-spa-комплекси': 'Басейни и Spa комплекси',
+    'довършителни-дейности': 'Довършителни дейности',
+    'овк-вик-и-ел-инсталации': 'ОВК, ВиК и ел. инсталации',
+    'архитектурно-проектиране': 'Архитектурно проектиране'
+  };
+  
+  // Open gallery when clicking on a service card
+  document.querySelectorAll('.service-card .view-gallery-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const serviceCard = this.closest('.service-card');
+      const galleryType = serviceCard.dataset.gallery;
+      const images = galleryImages[galleryType] || [];
+      const title = serviceTitles[galleryType] || 'Галерия';
+      
+      if (images.length === 0) {
+        alert('В момента няма налични изображения в тази галерия.');
+        return;
+      }
+      
+      // Set gallery title
+      galleryTitle.textContent = title;
+      
+      // Clear thumbnails
+      galleryThumbnails.innerHTML = '';
+      
+      // Add thumbnails
+      images.forEach((imagePath, index) => {
+        const thumbnail = document.createElement('div');
+        thumbnail.className = 'gallery-thumbnail' + (index === 0 ? ' active' : '');
+        thumbnail.innerHTML = `<img src="${imagePath}" alt="${title} - Изображение ${index + 1}">`;
+        thumbnail.addEventListener('click', () => {
+          document.querySelectorAll('.gallery-thumbnail').forEach(thumb => thumb.classList.remove('active'));
+          thumbnail.classList.add('active');
+          galleryMainImage.src = imagePath;
+          galleryMainImage.alt = `${title} - Изображение ${index + 1}`;
+        });
+        galleryThumbnails.appendChild(thumbnail);
+      });
+      
+      // Set main image
+      galleryMainImage.src = images[0];
+      galleryMainImage.alt = `${title} - Изображение 1`;
+      
+      // Show modal
+      galleryModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  
+  // Close gallery modal
+  if (closeGallery) {
+    closeGallery.addEventListener('click', function() {
+      galleryModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+  
+  // Close gallery when clicking outside of content
+  galleryModal.addEventListener('click', function(e) {
+    if (e.target === galleryModal) {
+      galleryModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+  
+  // Close gallery with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && galleryModal.classList.contains('active')) {
+      galleryModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
 });

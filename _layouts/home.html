@@ -30,12 +30,15 @@ layout: default
       <h2>Нашите услуги</h2>
       <div class="services-grid">
         {% for service in site.data.services %}
-        <div class="service-card">
+        <div class="service-card" data-gallery="{% if service.title == 'Жилищно строителство' %}home{% else %}{{ service.title | slugify }}{% endif %}">
           <div class="service-icon">
             <img src="{{ service.icon | relative_url }}" alt="{{ service.title }}">
           </div>
           <h3>{{ service.title }}</h3>
           <p>{{ service.description }}</p>
+          <div class="service-action">
+            <button class="btn btn-secondary view-gallery-btn">Разгледай галерия</button>
+          </div>
         </div>
         {% endfor %}
       </div>
