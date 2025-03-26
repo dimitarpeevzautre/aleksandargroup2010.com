@@ -26,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const contactForm = document.querySelector('form');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
       // Simple validation
       let valid = true;
       this.querySelectorAll('input, textarea').forEach(field => {
@@ -39,9 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
       
-      if (valid) {
-        alert('Благодарим ви за вашето съобщение! Ще се свържем с вас възможно най-скоро.');
-        this.reset();
+      if (!valid) {
+        e.preventDefault(); // Only prevent default if validation fails
       }
     });
   }
