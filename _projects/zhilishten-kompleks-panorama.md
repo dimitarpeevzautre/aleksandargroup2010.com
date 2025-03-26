@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Жилищен комплекс Панорама"
+title: "Therma ECO Village"
 location: "София, България"
 year: 2022
 thumbnail: "/assets/images/projects/panorama-thumb.jpg"
