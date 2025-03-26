@@ -6,15 +6,15 @@ year: 2022
 thumbnail: "/assets/images/projects/Заглавна снимка.jpg"
 featured_image: "/assets/images/projects/Заглавна снимка.jpg"
 gallery:
-  - url: "/assets/images/projects/IMG_8222.jpg"
+  - url: "/assets/images/projects/IMG_8222.JPG"
     caption: "Изглед на фасада"
-  - url: "/assets/images/projects/IMG_8223.jpg"
+  - url: "/assets/images/projects/IMG_8223.JPG"
     caption: "Изглед на фасада"
-  - url: "/assets/images/projects/IMG_8224.jpg"
-  - url: "/assets/images/projects/IMG_8225.jpg"
-  - url: "/assets/images/projects/IMG_8226.jpg"
+  - url: "/assets/images/projects/IMG_8224.JPG"
+  - url: "/assets/images/projects/IMG_8225.JPG"
+  - url: "/assets/images/projects/IMG_8226.JPG"
     caption: "Интериор"
-  - url: "/assets/images/projects/IMG_8227.jpg"
+  - url: "/assets/images/projects/IMG_8227.JPG"
 
 ---
 
