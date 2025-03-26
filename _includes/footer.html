@@ -31,16 +31,6 @@
         </address>
       </div>
       
-      <div class="footer-social">
-        <h3>Следвайте ни</h3>
-        <div class="social-links">
-          {% for social in site.data.social %}
-          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ social.icon | relative_url }}" alt="{{ social.title }}">
-          </a>
-          {% endfor %}
-        </div>
-      </div>
     </div>
     
     <div class="footer-bottom">
