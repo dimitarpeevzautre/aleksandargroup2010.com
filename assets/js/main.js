@@ -184,11 +184,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Previous button
       paginationHTML += `<button class="pagination-prev" ${pageIndex === 0 ? 'disabled' : ''}>&laquo;</button>`;
       
-      // Page numbers
-      for (let i = 0; i < totalPages; i++) {
-        paginationHTML += `<button class="pagination-num ${i === pageIndex ? 'active' : ''}">${i + 1}</button>`;
-      }
-      
       // Next button
       paginationHTML += `<button class="pagination-next" ${pageIndex === totalPages - 1 ? 'disabled' : ''}>&raquo;</button>`;
       
