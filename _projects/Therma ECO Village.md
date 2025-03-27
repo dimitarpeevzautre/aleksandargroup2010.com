@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Therma ECO Village"
-location: "София, България"
+location: "Кранево, България"
 year: 2017
 date: 2017-08-15
 thumbnail: "/assets/images/projects/Заглавна снимка Therma.jpg"
