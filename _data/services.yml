@@ -34,7 +34,20 @@
   icon: "/assets/images/services/infrastructure.svg"
   description: "Изграждане на ОВК, ВиК и електро инсталации, подово отопление и други специализирани инсталации."
   gallery_id: "овк-вик-и-ел-инсталации"
-  gallery_images: []
+  gallery_images:
+    - "/assets/images/ovk, vik/IMG_8001.JPG"
+    - "/assets/images/ovk, vik/IMG_8002.JPG"
+    - "/assets/images/ovk, vik/IMG_8066.JPG"
+    - "/assets/images/ovk, vik/IMG_8067.JPG"
+    - "/assets/images/ovk, vik/IMG_8351.JPG"
+    - "/assets/images/ovk, vik/IMG_8352.JPG"
+    - "/assets/images/ovk, vik/IMG_8353.JPG"
+    - "/assets/images/ovk, vik/IMG_8354.JPG"
+    - "/assets/images/ovk, vik/IMG_8355.JPG"
+    - "/assets/images/ovk, vik/IMG_8356.JPG"
+    - "/assets/images/ovk, vik/IMG_8443.JPG"
+    - "/assets/images/ovk, vik/IMG_8444.JPG"
+    - "/assets/images/ovk, vik/IMG_8445.JPG"
 
 - title: "Архитектурно проектиране и Геодезия"
   icon: "/assets/images/services/architecture.svg"
