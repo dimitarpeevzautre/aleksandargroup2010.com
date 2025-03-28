@@ -395,7 +395,19 @@
   icon: "/assets/images/services/industrial.svg"
   description: "Финна шпакловка, машинно боядисване, декоративни мазилки, гранитогрес, каменни облицовки, вътрешни и външни мазилки."
   gallery_id: "довършителни-дейности"
-  gallery_images: []
+  gallery_images:
+    - "/assets/images/others/1.JPG"
+    - "/assets/images/others/2.JPG"
+    - "/assets/images/others/3.JPG"
+    - "/assets/images/others/4.JPG"
+    - "/assets/images/others/5.JPG"
+    - "/assets/images/others/6.JPG"
+    - "/assets/images/others/7.JPG"
+    - "/assets/images/others/8.JPG"
+    - "/assets/images/others/9.JPG"
+    - "/assets/images/others/10.JPG"
+    - "/assets/images/others/11.JPG"
+    
 
 - title: "ОВК, ВиК и ел. инсталации"
   icon: "/assets/images/services/infrastructure.svg"
