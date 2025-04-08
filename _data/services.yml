@@ -3,7 +3,7 @@
   description: "Изграждане на жилищни сгради, еднофамилни къщи, изкопи, събаряне на стари сгради, извозване на земни маси, доставка на скални фракции и др."
   gallery_id: "home"
   gallery_images:
-   - "/assets/images/ime na papka/nomer na snimka.JPG"
+   - "/assets/images/home/IMG_7984.JPG"
 
 - title: "Ремонтни дейности"
   icon: "/assets/images/services/renovation.svg"
