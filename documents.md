@@ -24,13 +24,13 @@ permalink: /documents/
       <div class="document-item">
         <h3>Регистрационен документ</h3>
         <p>Официален регистрационен документ</p>
-        <a href="{{ '/assets/documents/Регистрационен документ .pdf' | relative_url }}" class="btn btn-primary" target="_blank">Изтегли</a>
+        <a href="{{ '/assets/documents/Регистрационен документ.pdf' | relative_url }}" class="btn btn-primary" target="_blank">Изтегли</a>
       </div>
 
       <div class="document-item">
         <h3>Инвестиционно предложение</h3>
         <p>Инвестиционно предложение РИОСВ</p>
-        <a href="{{ '/assets/documents/Инвестиционно предложение .pdf' | relative_url }}" class="btn btn-primary" target="_blank">Изтегли</a>
+        <a href="{{ '/assets/documents/Инвестиционно предложение.pdf' | relative_url }}" class="btn btn-primary" target="_blank">Изтегли</a>
       </div>
       
     </div>
